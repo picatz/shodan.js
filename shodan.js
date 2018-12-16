@@ -438,36 +438,36 @@ class ShodanClient {
     bannerStream(callback, interval) {
         let url = new URL(this.endpoints.streamingAPI + "/shodan/banners")
 
-        _slurp_stream(url, callback, interval)
+        this._slurp_stream(url, callback, interval)
     }
 
     bannerStreamByASNs(asns, callback, interval) {
         let url = new URL(this.endpoints.streamingAPI + "/shodan/asn/" + asns)
 
-        _slurp_stream(url, callback, interval)
+        this._slurp_stream(url, callback, interval)
     }
 
     bannerStreamByCountries(countries, callback, interval) {
         let url = new URL(this.endpoints.streamingAPI + "/shodan/countries/" + countries)
 
-        _slurp_stream(url, callback, interval)
+        this._slurp_stream(url, callback, interval)
     }
 
     bannerStreamByPorts(ports, callback, interval) {
         let url = new URL(this.endpoints.streamingAPI + "/shodan/ports/" + ports)
 
-        _slurp_stream(url, callback, interval)
+        this._slurp_stream(url, callback, interval)
     }
 
     alertStream(callback, interval) {
         let url = new URL(this.endpoints.streamingAPI + "/shodan/alert")
 
-        _slurp_stream(url, callback, interval)
+        this._slurp_stream(url, callback, interval)
     }
 
     alertStreamByID(id, callback, interval) {
         let url = new URL(this.endpoints.streamingAPI + "/shodan/alert/" + id)
 
-        _slurp_stream(url, callback, interval)
+        this._slurp_stream(url, callback, interval)
     }
 }
